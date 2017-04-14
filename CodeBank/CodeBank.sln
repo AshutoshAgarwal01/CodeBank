@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeBank", "CodeBank\CodeBank.csproj", "{EA9672DB-4195-4FA0-B4DC-872A9F695C28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeBankTests", "CodeBankTests\CodeBankTests.csproj", "{91E03A3B-F5F1-4A17-B7DD-EDEA547DFB00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EA9672DB-4195-4FA0-B4DC-872A9F695C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA9672DB-4195-4FA0-B4DC-872A9F695C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA9672DB-4195-4FA0-B4DC-872A9F695C28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91E03A3B-F5F1-4A17-B7DD-EDEA547DFB00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E03A3B-F5F1-4A17-B7DD-EDEA547DFB00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E03A3B-F5F1-4A17-B7DD-EDEA547DFB00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E03A3B-F5F1-4A17-B7DD-EDEA547DFB00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
