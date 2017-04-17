@@ -9,15 +9,16 @@ using System.Threading.Tasks;
 namespace CodeBank.Misc.Tests
 {
     [TestClass()]
-    public class LongestPalindromicSubstringTests
+    public class LongestWordTests
     {
         [TestMethod()]
-        public void LongestPalindromicSubstring_StringTest()
+        public void FindLongestWordTest()
         {
-            var str = "ccc";
+            var inputWord = "bab";
+            var dict = new List<string>() { "ba", "ab", "a", "b" };
 
-            var longest = LongestPalindromicSubstring.LongestPalindromicSubstring_String_Dp(str);
-            var x = 1;
+            var result = LongestWord.FindLongestWord(inputWord, dict);
+            var res = 1;
         }
     }
 }

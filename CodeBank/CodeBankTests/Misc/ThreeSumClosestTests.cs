@@ -9,15 +9,16 @@ using System.Threading.Tasks;
 namespace CodeBank.Misc.Tests
 {
     [TestClass()]
-    public class LongestPalindromicSubstringTests
+    public class ThreeSumClosestTests
     {
         [TestMethod()]
-        public void LongestPalindromicSubstring_StringTest()
+        public void ThreeSumClosest_N2Test()
         {
-            var str = "ccc";
+            var target = 82;
+            var nums = new int[] {1, 2, 4, 8, 16, 32, 64, 128 };
 
-            var longest = LongestPalindromicSubstring.LongestPalindromicSubstring_String_Dp(str);
-            var x = 1;
+            var x = ThreeSumClosest.ThreeSumClosest_N2(nums, target);
+            var p = 1;
         }
     }
 }

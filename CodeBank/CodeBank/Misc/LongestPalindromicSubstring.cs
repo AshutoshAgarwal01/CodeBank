@@ -4,6 +4,49 @@ namespace CodeBank.Misc
 {
     public class LongestPalindromicSubstring
     {
+        /// <summary>
+        /// Dynamic programming solution
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
+        public static string LongestPalindromicSubstring_String_Dp(string s)
+        {
+            var data = new bool[s.Length, s.Length];
+            int maxLen = 1;
+            int beginsAtIndex = 0;
+
+            for (int i = 0; i < s.Length; i++)
+            {
+                data[i, i] = true;
+                if (i > 0 && s[i] == s[i - 1])
+                {
+                    data[i - 1, i] = true;
+                    if (maxLen < 2)
+                    {
+                        maxLen = 2;
+                        beginsAtIndex = i - 2 + 1;
+                    }
+                }
+            }
+
+            for (var l = 3; l <= s.Length; l++)
+            {
+                for (var i = l - 1; i < s.Length; i++)
+                {
+                    if (s[i] == s[i - l + 1] && data[i - l + 2, i - 1])
+                    {
+                        data[i - l + 1, i] = true;
+                        if (maxLen < l)
+                        {
+                            maxLen = l;
+                            beginsAtIndex = i - l + 1;
+                        }
+                    }
+                }
+            }
+            return s.Substring(beginsAtIndex, maxLen);
+        }
+
         public static string LongestPalindromicSubstring_String(string s)
         {
             if (string.IsNullOrEmpty(s) || s.Length == 1)
@@ -15,7 +58,7 @@ namespace CodeBank.Misc
             data[0] = 1;
             int centerIndex = 0;
 
-            //Del with odd length
+            //Deal with odd length
             for (var i = 1; i < s.Length; i++)
             {
                 data[i] = 1;
@@ -33,7 +76,7 @@ namespace CodeBank.Misc
             //Then with even lengths
             for (var i = 1; i < s.Length; i++)
             {
-                if(s[i] == s[i-1])
+                if (s[i] == s[i - 1])
                 {
                     var currLen = 2;
                     var end = i + 1;

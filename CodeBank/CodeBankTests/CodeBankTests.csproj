@@ -53,6 +53,8 @@
   <ItemGroup>
     <Compile Include="Misc\LongestPalindromicSubstringTests.cs" />
     <Compile Include="Misc\LongestValidParenthesesTests.cs" />
+    <Compile Include="Misc\LongestWordTests.cs" />
+    <Compile Include="Misc\ThreeSumClosestTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tree\TreeNodeTests.cs" />
   </ItemGroup>
