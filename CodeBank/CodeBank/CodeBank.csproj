@@ -46,6 +46,7 @@
     <Compile Include="Misc\LongestPalindromicSubstring.cs" />
     <Compile Include="Misc\LongestValidParentheses.cs" />
     <Compile Include="Misc\LongestWord.cs" />
+    <Compile Include="Misc\NSum.cs" />
     <Compile Include="Misc\ThreeSumClosest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
