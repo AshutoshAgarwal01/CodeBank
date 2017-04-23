@@ -50,6 +50,10 @@
     <Compile Include="Misc\ThreeSumClosest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sorting\Bubble.cs" />
+    <Compile Include="Sorting\Merge.cs" />
+    <Compile Include="Tree\AvlTreeHelper.cs" />
+    <Compile Include="Tree\AvlTreeNode.cs" />
     <Compile Include="Tree\TreeNode.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -57,6 +57,9 @@
     <Compile Include="Misc\NSumTests.cs" />
     <Compile Include="Misc\ThreeSumClosestTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sorting\BubbleTests.cs" />
+    <Compile Include="Sorting\MergeTests.cs" />
+    <Compile Include="Tree\AvlTreeHelperTests.cs" />
     <Compile Include="Tree\TreeNodeTests.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -72,6 +72,20 @@ namespace CodeBank.Tree
             return GetTree(0, sortedList.Count - 1, sortedList);
         }
 
+        /// <summary>
+        /// Get depth of a node.
+        /// </summary>
+        /// <returns></returns>
+        public int GetDepth()
+        {
+            if (IsLeaf())
+                return 1;
+
+            int leftDepth = left == null ? 0 : left.GetDepth();
+            int rightDepth = right == null ? 0 : right.GetDepth();
+            return Math.Max(leftDepth, rightDepth) + 1;
+        }
+
         public int GetDepth(int d)
         {
             int leftDepth = (left == null) ? d : left.GetDepth(d + 1);

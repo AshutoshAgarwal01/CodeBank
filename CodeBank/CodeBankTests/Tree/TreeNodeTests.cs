@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using CodeBank.Tree;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 
 namespace CodeBank.Tree.Tests
@@ -70,6 +71,18 @@ namespace CodeBank.Tree.Tests
             var sortedList = new List<int> { 1, 2, 3, 4, 5, 6, 7 };
             var tree = TreeNode.SortedListToBalancedTree(sortedList);
             var allPaths = tree.GetAllPathsIter();
+            var x = 1;
+        }
+
+        [TestMethod()]
+        public void GetDepthTest()
+        {
+            var sortedList = new List<int> { 10, 20, 30, 40, 50, 60, 70 };
+            var tree = TreeNode.SortedListToBalancedTree(sortedList);
+            tree.AddNode(80);
+            tree.AddNode(90);
+
+            var d = tree.GetDepth();
             var x = 1;
         }
     }
