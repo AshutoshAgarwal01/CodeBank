@@ -46,15 +46,18 @@
     <Compile Include="Misc\LongestPalindromicSubstring.cs" />
     <Compile Include="Misc\LongestValidParentheses.cs" />
     <Compile Include="Misc\LongestWord.cs" />
+    <Compile Include="Misc\MatchExpression.cs" />
     <Compile Include="Misc\NSum.cs" />
     <Compile Include="Misc\ThreeSumClosest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sorting\Bubble.cs" />
+    <Compile Include="Sorting\Heap.cs" />
     <Compile Include="Sorting\Merge.cs" />
     <Compile Include="Tree\AvlTreeHelper.cs" />
     <Compile Include="Tree\AvlTreeNode.cs" />
     <Compile Include="Tree\TreeNode.cs" />
+    <Compile Include="Trie\TrieNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
